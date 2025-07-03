@@ -19,7 +19,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install sphinx furo
+          pip install sphinx furo myst_parser
           sudo apt-get install make
 
       - name: Build documentation
