@@ -10,7 +10,7 @@ sys.path.insert(0, os.path.abspath('../../'))
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'MagiAttention2'
+project = 'MagiAttention1'
 copyright = '2025, Sandai'
 author = 'Sandai'
 release = 'v1.0.2'
@@ -84,4 +84,4 @@ html_theme = 'furo'
 # html_theme = 'classic'
 # html_theme_path = [pytorch_sphinx_theme2.get_html_theme_path()]
 html_static_path = ['_static']
-html_baseurl = "https://wt1w.github.io/test_sphinx/blog2/"
+html_baseurl = "https://wt1w.github.io/test_sphinx/blog1/"
