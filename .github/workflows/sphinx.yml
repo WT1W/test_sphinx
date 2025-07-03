@@ -33,6 +33,5 @@ jobs:
           publish_branch: gh-pages
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: docs/build/html
-          destination_dir: blog1
+          destination_dir: blog2
           keep_files: true
-          force_orphan: true
