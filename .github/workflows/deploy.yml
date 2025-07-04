@@ -96,11 +96,10 @@ jobs:
           purgecss -c purgecss.config.js
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: gh-pages
-          folder: _site
-          target-folder: blogs
-          clean: true
-          clean-exclude: |
-            docs/
+          publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dirs: _site
+          destination_dir: blog
+          keep_files: true
