@@ -20,7 +20,7 @@
 ## range
 
 ```{eval-rst}
-.. currentmodule:: magi_attention.common.range
+.. currentmodule:: src.range
 ```
 
 ```{eval-rst}
@@ -31,7 +31,7 @@
 ## ranges
 
 ```{eval-rst}
-.. currentmodule:: magi_attention.common.ranges
+.. currentmodule:: src.ranges
 ```
 
 ```{eval-rst}
