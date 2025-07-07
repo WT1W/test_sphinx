@@ -15,8 +15,7 @@
 from typing import Any, Iterator, Sequence, TypeAlias, Union
 
 import torch
-
-from magi_attention.utils import nvtx
+from torch import nn
 
 from .range import AttnRange, NaiveRange, RangeError
 
@@ -200,7 +199,6 @@ class AttnRanges:
 
         return non_empty_ranges
 
-    @nvtx.instrument_nvtx
     def sort(self) -> "AttnRanges":
         """
         Sort the attn_ranges by 'attn_range.start' in ascending order
@@ -213,7 +211,6 @@ class AttnRanges:
             sorted(self._ranges, key=lambda attn_range: attn_range.start)
         )
 
-    @nvtx.instrument_nvtx
     def merge(self) -> "AttnRanges":
         """Merge the attn_ranges for the overlapped / tangent parts
         in ascending order by 'attn_range.start'
@@ -239,7 +236,6 @@ class AttnRanges:
 
         return _merged_ranges
 
-    @nvtx.instrument_nvtx
     def chunk(self, chunk_size: int, check: bool = True) -> list["AttnRanges"]:
         if check:  # required to be non-overlap
             assert (
@@ -339,7 +335,6 @@ class AttnRanges:
         ), "The ranges can not be converted to cu_seqlens"
         return [0] + [attn_range.end for attn_range in self._ranges]
 
-    @nvtx.instrument_nvtx
     def make_range_local(
         self,
         other_attn_range: AttnRange,
@@ -378,7 +373,6 @@ class AttnRanges:
                 f"The attn_range {other_attn_range} is not in the (even merged) attn_ranges {merged_ranges}"
             )
 
-    @nvtx.instrument_nvtx
     def make_ranges_local(
         self,
         other_attn_ranges: "AttnRanges",
@@ -416,7 +410,6 @@ class AttnRanges:
 
         return local_ranges
 
-    @nvtx.instrument_nvtx
     def find_hole_ranges(
         self,
         other_attn_ranges: "AttnRanges",
@@ -474,7 +467,6 @@ class AttnRanges:
 
         return hole_ranges
 
-    @nvtx.instrument_nvtx
     def find_overlap_ranges(
         self: "AttnRanges",
         other_attn_ranges: "AttnRanges",
