@@ -4,9 +4,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="prev" title="MagiAttention documentation" href="index.html" />
+        <link rel="canonical" href="https://wt1w.github.io/test_sphinx/blog1/ranges.html" />
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
-        <title>Simple Test For AttnRanges - MagiAttention v1.0.2 documentation</title>
+        <title>Simple Test For AttnRanges Test Bendi - MagiAttention2 v1.0.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=302659d7" />
@@ -166,7 +167,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">MagiAttention v1.0.2 documentation</div></a>
+      <a href="index.html"><div class="brand">MagiAttention2 v1.0.2 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -190,7 +191,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
   
-  <span class="sidebar-brand-text">MagiAttention v1.0.2 documentation</span>
+  <span class="sidebar-brand-text">MagiAttention2 v1.0.2 documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -199,7 +200,7 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Simple Test For AttnRanges</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Simple Test For AttnRanges Test Bendi</a></li>
 </ul>
 
 </div>
@@ -243,10 +244,12 @@
           <p>.. role:: hidden
 :class: hidden-section</p>
 <section id="module-src">
-<span id="simple-test-for-attnranges"></span><h1>Simple Test For AttnRanges<a class="headerlink" href="#module-src" title="Link to this heading">¶</a></h1>
+<span id="simple-test-for-attnranges-test-bendi"></span><h1>Simple Test For AttnRanges Test Bendi<a class="headerlink" href="#module-src" title="Link to this heading">¶</a></h1>
 <nav class="contents local" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#module-src.google" id="id1">Google</a></p></li>
+<li><p><a class="reference internal" href="#range" id="id2">range</a></p></li>
+<li><p><a class="reference internal" href="#ranges" id="id3">ranges</a></p></li>
 </ul>
 </nav>
 <section id="module-src.google">
@@ -297,8 +300,8 @@ on the first line, separated by a colon.</p>
 <dt class="sig sig-object py" id="src.google.function_with_types_in_docstring">
 <span class="sig-prename descclassname"><span class="pre">src.google.</span></span><span class="sig-name descname"><span class="pre">function_with_types_in_docstring</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.google.function_with_types_in_docstring" title="Link to this definition">¶</a></dt>
 <dd><p>Example function with types documented in the docstring.</p>
-<p><a href="#id2"><span class="problematic" id="id3">`PEP 484`_</span></a> type annotations are supported. If attribute, parameter, and
-return types are annotated according to <a href="#id4"><span class="problematic" id="id5">`PEP 484`_</span></a>, they do not need to be
+<p><a href="#id4"><span class="problematic" id="id5">`PEP 484`_</span></a> type annotations are supported. If attribute, parameter, and
+return types are annotated according to <a href="#id6"><span class="problematic" id="id7">`PEP 484`_</span></a>, they do not need to be
 included in the docstring:</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -600,6 +603,495 @@ Sphinx’s conf.py:</p>
 </dd></dl>
 
 </section>
+<section id="range">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">range</a><a class="headerlink" href="#range" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.range.AttnRange">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.range.</span></span><span class="sig-name descname"><span class="pre">AttnRange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.range.AttnRange" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A dataclass to manage any indices range like [start, end) for attention computation</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="src.range.AttnRange.start">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">start</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#src.range.AttnRange.start" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="src.range.AttnRange.end">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">end</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#src.range.AttnRange.end" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="src.range.AttnRange.seqlen">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">seqlen</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#src.range.AttnRange.seqlen" title="Link to this definition">¶</a></dt>
+<dd><p>The length of this range in the axis</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.range.AttnRange.to_naive_range">
+<span class="sig-name descname"><span class="pre">to_naive_range</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.range.AttnRange.to_naive_range" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.range.AttnRange.from_range">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attn_range</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="#src.range.AttnRange" title="src.range.AttnRange"><span class="pre">AttnRange</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">check</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.range.AttnRange" title="src.range.AttnRange"><span class="pre">AttnRange</span></a></span></span><a class="headerlink" href="#src.range.AttnRange.from_range" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.range.AttnRange.offset">
+<span class="sig-name descname"><span class="pre">offset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.range.AttnRange" title="src.range.AttnRange"><span class="pre">AttnRange</span></a></span></span><a class="headerlink" href="#src.range.AttnRange.offset" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.range.AttnRange.truncate">
+<span class="sig-name descname"><span class="pre">truncate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.range.AttnRange" title="src.range.AttnRange"><span class="pre">AttnRange</span></a></span></span><a class="headerlink" href="#src.range.AttnRange.truncate" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.range.AttnRange.intersect">
+<span class="sig-name descname"><span class="pre">intersect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.range.AttnRange" title="src.range.AttnRange"><span class="pre">AttnRange</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.range.AttnRange" title="src.range.AttnRange"><span class="pre">AttnRange</span></a></span></span><a class="headerlink" href="#src.range.AttnRange.intersect" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.range.AttnRange.intersect_size">
+<span class="sig-name descname"><span class="pre">intersect_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.range.AttnRange" title="src.range.AttnRange"><span class="pre">AttnRange</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#src.range.AttnRange.intersect_size" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.range.AttnRange.union">
+<span class="sig-name descname"><span class="pre">union</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.range.AttnRange" title="src.range.AttnRange"><span class="pre">AttnRange</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#src.range.AttnRange" title="src.range.AttnRange"><span class="pre">AttnRange</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.range.AttnRange.union" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.range.AttnRange.union_size">
+<span class="sig-name descname"><span class="pre">union_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.range.AttnRange" title="src.range.AttnRange"><span class="pre">AttnRange</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#src.range.AttnRange.union_size" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.range.AttnRange.diff_by">
+<span class="sig-name descname"><span class="pre">diff_by</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.range.AttnRange" title="src.range.AttnRange"><span class="pre">AttnRange</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#src.range.AttnRange" title="src.range.AttnRange"><span class="pre">AttnRange</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.range.AttnRange.diff_by" title="Link to this definition">¶</a></dt>
+<dd><p>other - self</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.range.AttnRange.is_subrange_of">
+<span class="sig-name descname"><span class="pre">is_subrange_of</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.range.AttnRange" title="src.range.AttnRange"><span class="pre">AttnRange</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#src.range.AttnRange.is_subrange_of" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.range.AttnRange.is_overlap_with">
+<span class="sig-name descname"><span class="pre">is_overlap_with</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.range.AttnRange" title="src.range.AttnRange"><span class="pre">AttnRange</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#src.range.AttnRange.is_overlap_with" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.range.AttnRange.is_empty">
+<span class="sig-name descname"><span class="pre">is_empty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#src.range.AttnRange.is_empty" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.range.AttnRange.is_valid">
+<span class="sig-name descname"><span class="pre">is_valid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#src.range.AttnRange.is_valid" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.range.AttnRange.check_valid">
+<span class="sig-name descname"><span class="pre">check_valid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#src.range.AttnRange.check_valid" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="ranges">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">ranges</a><a class="headerlink" href="#ranges" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.ranges.</span></span><span class="sig-name descname"><span class="pre">AttnRanges</span></span><a class="headerlink" href="#src.ranges.AttnRanges" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A dataclass to manage a list of ‘AttnRange’ objects for attention computation</p>
+<p>Advanced methods (make_range_local, make_ranges_local, to_local_ranges, find_hole_ranges, find_overlap_ranges)
+NOTE: These advanced methods are designed to facilitate various range mappings
+NOTE: What are the local_ranges of AttnRanges?</p>
+<blockquote>
+<div><p>Since each attn_range in AttnRanges describes a continuous storage in actual memory,
+AttnRanges can choose to map to a continuous storage in actual memory that satisfies:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>It can store all attn_ranges in AttnRanges</p></li>
+<li><p>All attn_ranges are stored in order (by range.start and range.end)</p></li>
+</ol>
+</div></blockquote>
+<p>So the local_ranges of AttnRanges are the actual positions of each attn_range in this memory</p>
+</div></blockquote>
+<dl>
+<dt>Example::</dt><dd><p>The local_ranges of [[5, 10), [15, 20), [25, 30)] are [[0, 5), [5, 10), [10, 15)]
+The local_ranges of [[5, 10), [25, 30), [15, 20)] are [[0, 5), [5, 10), [10, 15)]
+Their mapping relationships are as follows:
+…..[5, 10)…..[15, 20)…..[25, 30)…..</p>
+<blockquote>
+<div><blockquote>
+<div><div class="line-block">
+<div class="line">|             |</div>
+</div>
+</div></blockquote>
+<p>[0, 5)      [5, 10)      [10, 15)</p>
+</div></blockquote>
+</dd>
+<dt>NOTE: Explanation of sorted and merged for AttnRanges:</dt><dd><p>sorted requires that each attn_range in AttnRanges is sorted by start in ascending order
+merged requires that each attn_range in AttnRanges is sorted by start in ascending order,
+and adjacent attn_ranges have no overlap</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Generally, the naming convention for attn_ranges in this repo follows these rules:
+attn ranges naming qualifier convention:</p>
+<blockquote>
+<div><dl>
+<dt>[DIST]_[SCOPE]_[PERM]_[ORDER]_[NAME]_ranges_[SUFFIX…]</dt><dd><dl class="simple">
+<dt>DIST: host/remote/total - indicates whether ranges are on host or remote device</dt><dd><ul class="simple">
+<li><p>host: ranges are on host</p></li>
+<li><p>remote: ranges are on remote device</p></li>
+<li><p>total: ranges are not on host or remote device, e.g. original reference ranges</p></li>
+</ul>
+</dd>
+<dt>SCOPE: global/local - indicates whether ranges use global or local indices</dt><dd><ul class="simple">
+<li><p>global: ranges use global indices</p></li>
+<li><p>local: ranges use local indices</p></li>
+</ul>
+</dd>
+<dt>PERM: unperm/perm - indicates whether ranges have been permuted</dt><dd><ul class="simple">
+<li><p>unperm: ranges have not been permuted</p></li>
+<li><p>perm: ranges have been permuted</p></li>
+</ul>
+</dd>
+<dt>ORDER: unordered/sorted/merged - indicates whether ranges are sorted or merged,</dt><dd><ul class="simple">
+<li><p>unordered: ranges are not sorted</p></li>
+<li><p>sorted: ranges are sorted by start</p></li>
+<li><p>merged: ranges are merged</p></li>
+</ul>
+</dd>
+</dl>
+<p>NAME: the name of the ranges
+SUFFIX: per_rank/per_stage/etc - additional qualifiers for list[AttnRanges]</p>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="simple">
+<dt>Example::</dt><dd><p>host_global_sorted_unperm_ranges_per_rank
+remote_local_merged_perm_ranges_per_stage</p>
+</dd>
+</dl>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.is_valid">
+<span class="sig-name descname"><span class="pre">is_valid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#src.ranges.AttnRanges.is_valid" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.check_valid">
+<span class="sig-name descname"><span class="pre">check_valid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#src.ranges.AttnRanges.check_valid" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.append">
+<span class="sig-name descname"><span class="pre">append</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attn_range</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.range.AttnRange" title="src.range.AttnRange"><span class="pre">AttnRange</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">check</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#src.ranges.AttnRanges.append" title="Link to this definition">¶</a></dt>
+<dd><p>Add the attn_range to the end</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.insert">
+<span class="sig-name descname"><span class="pre">insert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">idx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attn_range</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.range.AttnRange" title="src.range.AttnRange"><span class="pre">AttnRange</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">check</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#src.ranges.AttnRanges.insert" title="Link to this definition">¶</a></dt>
+<dd><p>Insert the attn_range to the ‘idx’-th position,
+NOTE: if idx &gt;= len(self._ranges), then use ‘append’ instead</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.extend">
+<span class="sig-name descname"><span class="pre">extend</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attn_ranges</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.ranges.AttnRanges" title="src.ranges.AttnRanges"><span class="pre">AttnRanges</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">check</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#src.ranges.AttnRanges.extend" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.pop">
+<span class="sig-name descname"><span class="pre">pop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">idx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">-1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.range.AttnRange" title="src.range.AttnRange"><span class="pre">AttnRange</span></a></span></span><a class="headerlink" href="#src.ranges.AttnRanges.pop" title="Link to this definition">¶</a></dt>
+<dd><p>Remove and return item at index (default last).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>idx</strong> – The index of the element to remove. Default is -1 (last element).</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The removed AttnRange object.</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>IndexError</strong> – If the list is empty or idx is out of range.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.clear_empty">
+<span class="sig-name descname"><span class="pre">clear_empty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.ranges.AttnRanges" title="src.ranges.AttnRanges"><span class="pre">AttnRanges</span></a></span></span><a class="headerlink" href="#src.ranges.AttnRanges.clear_empty" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.sort">
+<span class="sig-name descname"><span class="pre">sort</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.ranges.AttnRanges" title="src.ranges.AttnRanges"><span class="pre">AttnRanges</span></a></span></span><a class="headerlink" href="#src.ranges.AttnRanges.sort" title="Link to this definition">¶</a></dt>
+<dd><p>Sort the attn_ranges by ‘attn_range.start’ in ascending order</p>
+<p>NOTE: Python’s sort is stable, so when start values are the same,
+the original order will be preserved</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.merge">
+<span class="sig-name descname"><span class="pre">merge</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.ranges.AttnRanges" title="src.ranges.AttnRanges"><span class="pre">AttnRanges</span></a></span></span><a class="headerlink" href="#src.ranges.AttnRanges.merge" title="Link to this definition">¶</a></dt>
+<dd><p>Merge the attn_ranges for the overlapped / tangent parts
+in ascending order by ‘attn_range.start’</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.chunk">
+<span class="sig-name descname"><span class="pre">chunk</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chunk_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#src.ranges.AttnRanges" title="src.ranges.AttnRanges"><span class="pre">AttnRanges</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.ranges.AttnRanges.chunk" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.truncate">
+<span class="sig-name descname"><span class="pre">truncate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.ranges.AttnRanges" title="src.ranges.AttnRanges"><span class="pre">AttnRanges</span></a></span></span><a class="headerlink" href="#src.ranges.AttnRanges.truncate" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.is_sorted">
+<span class="sig-name descname"><span class="pre">is_sorted</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#src.ranges.AttnRanges.is_sorted" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the ranges are sorted by ‘attn_range.start’ in ascending order</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.is_merged">
+<span class="sig-name descname"><span class="pre">is_merged</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#src.ranges.AttnRanges.is_merged" title="Link to this definition">¶</a></dt>
+<dd><p>Whether the ranges are merged,
+which means:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>if the ranges are sorted by ‘attn_range.start’ in ascending order</p></li>
+<li><p>if any pair of the ranges have neither overlapped nor tangent parts</p></li>
+</ol>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.is_non_overlap">
+<span class="sig-name descname"><span class="pre">is_non_overlap</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#src.ranges.AttnRanges.is_non_overlap" title="Link to this definition">¶</a></dt>
+<dd><p>Whether any pair of the ranges have overlapped parts</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.is_cu_seqlens">
+<span class="sig-name descname"><span class="pre">is_cu_seqlens</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seqlen</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#src.ranges.AttnRanges.is_cu_seqlens" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.to_cu_seqlens">
+<span class="sig-name descname"><span class="pre">to_cu_seqlens</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq_len</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.ranges.AttnRanges.to_cu_seqlens" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.make_range_local">
+<span class="sig-name descname"><span class="pre">make_range_local</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other_attn_range</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.range.AttnRange" title="src.range.AttnRange"><span class="pre">AttnRange</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_self_merged</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix_offset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.range.AttnRange" title="src.range.AttnRange"><span class="pre">AttnRange</span></a></span></span><a class="headerlink" href="#src.ranges.AttnRanges.make_range_local" title="Link to this definition">¶</a></dt>
+<dd><p>将other_attn_range映射到self_ranges对应的local_ranges中,
+并返回other_attn_range在local_ranges中的位置 (允许通过可选的位置参数来截断)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>other_attn_range</strong> (<a class="reference internal" href="#src.range.AttnRange" title="src.range.AttnRange"><em>AttnRange</em></a>) – 需要被转换的other_attn_range</p></li>
+<li><p><strong>is_self_merged</strong> (<em>bool</em>) – 是否self已经merge</p></li>
+<li><p><strong>prefix_offset</strong> (<em>list</em><em>[</em><em>int</em><em>] </em><em>| </em><em>None</em>) – 如果prefix_offset为None, 则计算prefix_offset</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>other_attn_range在self的local_ranges中的位置（如果有截断操作，可能返回一个空的range）</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>local_range(<a class="reference internal" href="#src.range.AttnRange" title="src.range.AttnRange">AttnRange</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.make_ranges_local">
+<span class="sig-name descname"><span class="pre">make_ranges_local</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other_attn_ranges</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.ranges.AttnRanges" title="src.ranges.AttnRanges"><span class="pre">AttnRanges</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_self_merged</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.ranges.AttnRanges" title="src.ranges.AttnRanges"><span class="pre">AttnRanges</span></a></span></span><a class="headerlink" href="#src.ranges.AttnRanges.make_ranges_local" title="Link to this definition">¶</a></dt>
+<dd><p>Maps each attn_range in other_attn_ranges to the local ranges of self,
+and returns the position of each attn_range in self’s local ranges.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ranges</strong> (<a class="reference internal" href="#src.ranges.AttnRanges" title="src.ranges.AttnRanges"><em>AttnRanges</em></a>) – The ranges to be converted, must be merged ranges</p></li>
+<li><p><strong>is_self_merged</strong> (<em>bool</em>) – Whether self is already merged</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>The position of each attn_range in the reference local ranges</dt><dd><p>(may contain empty ranges if truncation occurs)</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>local_ranges(<a class="reference internal" href="#src.ranges.AttnRanges" title="src.ranges.AttnRanges">AttnRanges</a>)</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Complexity:</dt><dd><p>assume len(self) = m, len(other_attn_ranges) = n
+then the complexity is O(m + n * log(m))</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.find_hole_ranges">
+<span class="sig-name descname"><span class="pre">find_hole_ranges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other_attn_ranges</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.ranges.AttnRanges" title="src.ranges.AttnRanges"><span class="pre">AttnRanges</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_self_merged</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_other_merged</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.ranges.AttnRanges" title="src.ranges.AttnRanges"><span class="pre">AttnRanges</span></a></span></span><a class="headerlink" href="#src.ranges.AttnRanges.find_hole_ranges" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the result of self - other_attn_ranges
+NOTE: The ‘-’ here is the set difference, so the returned hole_ranges contains</p>
+<blockquote>
+<div><p>ranges that are in self but not in other_attn_ranges</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other_attn_ranges</strong> (<a class="reference internal" href="#src.ranges.AttnRanges" title="src.ranges.AttnRanges"><em>AttnRanges</em></a>) – The ranges to be subtracted</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>hole_ranges is merged
+hole_ranges(AttnRanges): The result of self - other_attn_ranges</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>NOTE</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Example::</dt><dd><p>self = [[0, 10), [15, 20), [20, 30)]
+other_attn_ranges = [[5, 10), [25, 30)]
+return [[0, 5), [15, 25)]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.find_overlap_ranges">
+<span class="sig-name descname"><span class="pre">find_overlap_ranges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other_attn_ranges</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.ranges.AttnRanges" title="src.ranges.AttnRanges"><span class="pre">AttnRanges</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_self_merged</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_other_merged</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.ranges.AttnRanges" title="src.ranges.AttnRanges"><span class="pre">AttnRanges</span></a></span></span><a class="headerlink" href="#src.ranges.AttnRanges.find_overlap_ranges" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the intersection of self and other_attn_ranges</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other_attn_ranges</strong> (<a class="reference internal" href="#src.ranges.AttnRanges" title="src.ranges.AttnRanges"><em>AttnRanges</em></a>) – The ranges to find intersection with</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>overlap_ranges is guaranteed to be merged
+overlap_ranges(AttnRanges): The intersection of self and other_attn_ranges</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>NOTE</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Example::</dt><dd><p>self = [[0, 10), [15, 20), [25, 30)]
+other_attn_ranges = [[5, 10), [18, 30)]
+return [[5, 10), [18, 20), [25, 30)]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.to_tensor">
+<span class="sig-name descname"><span class="pre">to_tensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'cpu'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tensor</span></span></span><a class="headerlink" href="#src.ranges.AttnRanges.to_tensor" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.from_cu_seqlens">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_cu_seqlens</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cu_seqlens</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seq_len</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.ranges.AttnRanges" title="src.ranges.AttnRanges"><span class="pre">AttnRanges</span></a></span></span><a class="headerlink" href="#src.ranges.AttnRanges.from_cu_seqlens" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.from_ranges">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_ranges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ranges</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#src.range.AttnRange" title="src.range.AttnRange"><span class="pre">AttnRange</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="#src.ranges.AttnRanges" title="src.ranges.AttnRanges"><span class="pre">AttnRanges</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">check</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.ranges.AttnRanges" title="src.ranges.AttnRanges"><span class="pre">AttnRanges</span></a></span></span><a class="headerlink" href="#src.ranges.AttnRanges.from_ranges" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.to_naive_ranges">
+<span class="sig-name descname"><span class="pre">to_naive_ranges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.ranges.AttnRanges.to_naive_ranges" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.intersect_size">
+<span class="sig-name descname"><span class="pre">intersect_size</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#src.ranges.AttnRanges.intersect_size" title="Link to this definition">¶</a></dt>
+<dd><p>Calculate the total size of overlapping parts between all attn_ranges</p>
+<p>Uses a sweep line algorithm to calculate the total overlap size between all interval pairs.
+Time complexity is O(n log n), where n is the number of intervals.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Total size of overlapping parts between all interval pairs</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.intersect_size_with">
+<span class="sig-name descname"><span class="pre">intersect_size_with</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.ranges.AttnRanges" title="src.ranges.AttnRanges"><span class="pre">AttnRanges</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#src.ranges.AttnRanges.intersect_size_with" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.union_size">
+<span class="sig-name descname"><span class="pre">union_size</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#src.ranges.AttnRanges.union_size" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.union_size_with">
+<span class="sig-name descname"><span class="pre">union_size_with</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.ranges.AttnRanges" title="src.ranges.AttnRanges"><span class="pre">AttnRanges</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#src.ranges.AttnRanges.union_size_with" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.total_seqlen">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">total_seqlen</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#src.ranges.AttnRanges.total_seqlen" title="Link to this definition">¶</a></dt>
+<dd><p>The total seqlen this ranges represent
+which is equal to the sum of the size of each range
+NOTE: distinguish with the property ‘self.max_seqlen’</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.max_seqlen">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">max_seqlen</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#src.ranges.AttnRanges.max_seqlen" title="Link to this definition">¶</a></dt>
+<dd><p>The maximum seqlen this ranges represent
+which is equal to the maximum size of each range
+NOTE: distinguish with the property ‘self.total_seqlen’</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.start">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">start</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#src.ranges.AttnRanges.start" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.end">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">end</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#src.ranges.AttnRanges.end" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.size">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">size</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#src.ranges.AttnRanges.size" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.points">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">points</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#src.ranges.AttnRanges.points" title="Link to this definition">¶</a></dt>
+<dd><p>The axis points covered by this ranges
+in ascending order and without duplicates</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.ranges.AttnRanges.is_empty">
+<span class="sig-name descname"><span class="pre">is_empty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#src.ranges.AttnRanges.is_empty" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
 </section>
 
         </article>
@@ -649,7 +1141,7 @@ Sphinx’s conf.py:</p>
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Simple Test For AttnRanges</a><ul>
+<li><a class="reference internal" href="#">Simple Test For AttnRanges Test Bendi</a><ul>
 <li><a class="reference internal" href="#module-src.google">Google</a><ul>
 <li><a class="reference internal" href="#src.google.module_level_variable1"><code class="docutils literal notranslate"><span class="pre">module_level_variable1</span></code></a></li>
 <li><a class="reference internal" href="#src.google.module_level_variable2"><code class="docutils literal notranslate"><span class="pre">module_level_variable2</span></code></a></li>
@@ -675,6 +1167,70 @@ Sphinx’s conf.py:</p>
 <li><a class="reference internal" href="#src.google.ExampleClass.readwrite_property"><code class="docutils literal notranslate"><span class="pre">ExampleClass.readwrite_property</span></code></a></li>
 <li><a class="reference internal" href="#src.google.ExampleClass.example_method"><code class="docutils literal notranslate"><span class="pre">ExampleClass.example_method()</span></code></a></li>
 <li><a class="reference internal" href="#src.google.ExampleClass.__special__"><code class="docutils literal notranslate"><span class="pre">ExampleClass.__special__()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#range">range</a><ul>
+<li><a class="reference internal" href="#src.range.AttnRange"><code class="docutils literal notranslate"><span class="pre">AttnRange</span></code></a><ul>
+<li><a class="reference internal" href="#src.range.AttnRange.start"><code class="docutils literal notranslate"><span class="pre">AttnRange.start</span></code></a></li>
+<li><a class="reference internal" href="#src.range.AttnRange.end"><code class="docutils literal notranslate"><span class="pre">AttnRange.end</span></code></a></li>
+<li><a class="reference internal" href="#src.range.AttnRange.seqlen"><code class="docutils literal notranslate"><span class="pre">AttnRange.seqlen</span></code></a></li>
+<li><a class="reference internal" href="#src.range.AttnRange.to_naive_range"><code class="docutils literal notranslate"><span class="pre">AttnRange.to_naive_range()</span></code></a></li>
+<li><a class="reference internal" href="#src.range.AttnRange.from_range"><code class="docutils literal notranslate"><span class="pre">AttnRange.from_range()</span></code></a></li>
+<li><a class="reference internal" href="#src.range.AttnRange.offset"><code class="docutils literal notranslate"><span class="pre">AttnRange.offset()</span></code></a></li>
+<li><a class="reference internal" href="#src.range.AttnRange.truncate"><code class="docutils literal notranslate"><span class="pre">AttnRange.truncate()</span></code></a></li>
+<li><a class="reference internal" href="#src.range.AttnRange.intersect"><code class="docutils literal notranslate"><span class="pre">AttnRange.intersect()</span></code></a></li>
+<li><a class="reference internal" href="#src.range.AttnRange.intersect_size"><code class="docutils literal notranslate"><span class="pre">AttnRange.intersect_size()</span></code></a></li>
+<li><a class="reference internal" href="#src.range.AttnRange.union"><code class="docutils literal notranslate"><span class="pre">AttnRange.union()</span></code></a></li>
+<li><a class="reference internal" href="#src.range.AttnRange.union_size"><code class="docutils literal notranslate"><span class="pre">AttnRange.union_size()</span></code></a></li>
+<li><a class="reference internal" href="#src.range.AttnRange.diff_by"><code class="docutils literal notranslate"><span class="pre">AttnRange.diff_by()</span></code></a></li>
+<li><a class="reference internal" href="#src.range.AttnRange.is_subrange_of"><code class="docutils literal notranslate"><span class="pre">AttnRange.is_subrange_of()</span></code></a></li>
+<li><a class="reference internal" href="#src.range.AttnRange.is_overlap_with"><code class="docutils literal notranslate"><span class="pre">AttnRange.is_overlap_with()</span></code></a></li>
+<li><a class="reference internal" href="#src.range.AttnRange.is_empty"><code class="docutils literal notranslate"><span class="pre">AttnRange.is_empty()</span></code></a></li>
+<li><a class="reference internal" href="#src.range.AttnRange.is_valid"><code class="docutils literal notranslate"><span class="pre">AttnRange.is_valid()</span></code></a></li>
+<li><a class="reference internal" href="#src.range.AttnRange.check_valid"><code class="docutils literal notranslate"><span class="pre">AttnRange.check_valid()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ranges">ranges</a><ul>
+<li><a class="reference internal" href="#src.ranges.AttnRanges"><code class="docutils literal notranslate"><span class="pre">AttnRanges</span></code></a><ul>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.is_valid"><code class="docutils literal notranslate"><span class="pre">AttnRanges.is_valid()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.check_valid"><code class="docutils literal notranslate"><span class="pre">AttnRanges.check_valid()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.append"><code class="docutils literal notranslate"><span class="pre">AttnRanges.append()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.insert"><code class="docutils literal notranslate"><span class="pre">AttnRanges.insert()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.extend"><code class="docutils literal notranslate"><span class="pre">AttnRanges.extend()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.pop"><code class="docutils literal notranslate"><span class="pre">AttnRanges.pop()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.clear_empty"><code class="docutils literal notranslate"><span class="pre">AttnRanges.clear_empty()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.sort"><code class="docutils literal notranslate"><span class="pre">AttnRanges.sort()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.merge"><code class="docutils literal notranslate"><span class="pre">AttnRanges.merge()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.chunk"><code class="docutils literal notranslate"><span class="pre">AttnRanges.chunk()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.truncate"><code class="docutils literal notranslate"><span class="pre">AttnRanges.truncate()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.is_sorted"><code class="docutils literal notranslate"><span class="pre">AttnRanges.is_sorted()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.is_merged"><code class="docutils literal notranslate"><span class="pre">AttnRanges.is_merged()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.is_non_overlap"><code class="docutils literal notranslate"><span class="pre">AttnRanges.is_non_overlap()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.is_cu_seqlens"><code class="docutils literal notranslate"><span class="pre">AttnRanges.is_cu_seqlens()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.to_cu_seqlens"><code class="docutils literal notranslate"><span class="pre">AttnRanges.to_cu_seqlens()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.make_range_local"><code class="docutils literal notranslate"><span class="pre">AttnRanges.make_range_local()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.make_ranges_local"><code class="docutils literal notranslate"><span class="pre">AttnRanges.make_ranges_local()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.find_hole_ranges"><code class="docutils literal notranslate"><span class="pre">AttnRanges.find_hole_ranges()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.find_overlap_ranges"><code class="docutils literal notranslate"><span class="pre">AttnRanges.find_overlap_ranges()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.to_tensor"><code class="docutils literal notranslate"><span class="pre">AttnRanges.to_tensor()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.from_cu_seqlens"><code class="docutils literal notranslate"><span class="pre">AttnRanges.from_cu_seqlens()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.from_ranges"><code class="docutils literal notranslate"><span class="pre">AttnRanges.from_ranges()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.to_naive_ranges"><code class="docutils literal notranslate"><span class="pre">AttnRanges.to_naive_ranges()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.intersect_size"><code class="docutils literal notranslate"><span class="pre">AttnRanges.intersect_size()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.intersect_size_with"><code class="docutils literal notranslate"><span class="pre">AttnRanges.intersect_size_with()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.union_size"><code class="docutils literal notranslate"><span class="pre">AttnRanges.union_size()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.union_size_with"><code class="docutils literal notranslate"><span class="pre">AttnRanges.union_size_with()</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.total_seqlen"><code class="docutils literal notranslate"><span class="pre">AttnRanges.total_seqlen</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.max_seqlen"><code class="docutils literal notranslate"><span class="pre">AttnRanges.max_seqlen</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.start"><code class="docutils literal notranslate"><span class="pre">AttnRanges.start</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.end"><code class="docutils literal notranslate"><span class="pre">AttnRanges.end</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.size"><code class="docutils literal notranslate"><span class="pre">AttnRanges.size</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.points"><code class="docutils literal notranslate"><span class="pre">AttnRanges.points</span></code></a></li>
+<li><a class="reference internal" href="#src.ranges.AttnRanges.is_empty"><code class="docutils literal notranslate"><span class="pre">AttnRanges.is_empty()</span></code></a></li>
 </ul>
 </li>
 </ul>

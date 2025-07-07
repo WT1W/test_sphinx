@@ -52,7 +52,6 @@ autodoc_default_options = {
 
 # 只包含 __all__ 中定义的成员
 autodoc_default_flags = ['members', 'special-members']
-autodoc_mock_imports = ['torch']
 
 napoleon_google_docstring = True
 napoleon_numpy_docstring = True
