@@ -83,13 +83,13 @@ master_doc = 'index'
 html_theme = 'pydata_sphinx_theme'
 # html_theme = 'classic'
 # html_theme_path = [pytorch_sphinx_theme2.get_html_theme_path()]
-# html_static_path = ['_static']
+html_static_path = ['_static']
 html_baseurl = "https://wt1w.github.io/test_sphinx/blog8/"
 version = "5.2"
 html_theme_options = {
     "logo": {
-        "image_light": "docs/sand-logos/magi-icon.png",
-        "image_dark": "docs/sand-logos/magi-icon.png",
+        "image_light": "_static/sand-logos/magi-icon.png",
+        "image_dark": "_static/sand-logos/magi-icon.png",
         "text": "MagiAttention",
     },
     "navbar_start": ["navbar-logo", "version-switcher"],
