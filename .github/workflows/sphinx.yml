@@ -29,4 +29,4 @@ jobs:
         with:
           branch: gh-pages
           folder: docs/build/html
-          target-folder: blog7
+          target-folder: blog8
