@@ -80,7 +80,7 @@ master_doc = 'index'
 # import pytorch_sphinx_theme2
 
 # html_theme = 'pydata_sphinx_theme'
-html_theme = 'furo'
+html_theme = 'pydata_sphinx_theme'
 # html_theme = 'classic'
 # html_theme_path = [pytorch_sphinx_theme2.get_html_theme_path()]
 html_static_path = ['_static']
