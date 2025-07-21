@@ -85,3 +85,12 @@ html_theme = 'furo'
 # html_theme_path = [pytorch_sphinx_theme2.get_html_theme_path()]
 html_static_path = ['_static']
 html_baseurl = "https://wt1w.github.io/test_sphinx/blog3/"
+version = "v2.1"
+html_theme_options = {
+    "navbar_start": ["navbar-logo"],
+    "navbar_end": ["version-switcher"],
+    "switcher": {
+        "json_url": "https://github.com/WT1W/test_sphinx/blob/main/work.json",
+        "version_match": version,
+    },
+}
