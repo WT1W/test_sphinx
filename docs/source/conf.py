@@ -87,6 +87,9 @@ html_theme = 'pydata_sphinx_theme'
 html_baseurl = "https://wt1w.github.io/test_sphinx/blog8/"
 version = "5.2"
 html_theme_options = {
+    "logo": {
+        "text": "MagiAttention",
+    },
     "navbar_start": ["navbar-logo", "version-switcher"],
     "switcher": {
         "json_url": "https://raw.githubusercontent.com/WT1W/test_sphinx/refs/heads/main/work.json",
