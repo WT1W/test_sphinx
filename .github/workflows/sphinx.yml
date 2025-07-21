@@ -24,11 +24,9 @@ jobs:
           make clean
           make html
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+        uses: JamesIves/github-pages-deploy-action@v4
+        if: ${{ github.event_name == 'push' }}
         with:
-          publish_branch: gh-pages
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/build/html
-          destination_dir: blog1
-          keep_files: true
+          branch: gh-pages
+          folder: docs/build/html
+          target-folder: blog6
