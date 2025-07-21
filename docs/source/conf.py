@@ -84,8 +84,8 @@ html_theme = 'pydata_sphinx_theme'
 # html_theme = 'classic'
 # html_theme_path = [pytorch_sphinx_theme2.get_html_theme_path()]
 # html_static_path = ['_static']
-html_baseurl = "https://wt1w.github.io/test_sphinx/blog6/"
-version = "3.1"
+html_baseurl = "https://wt1w.github.io/test_sphinx/blog7/"
+version = "4.5"
 html_theme_options = {
     "navbar_start": ["navbar-logo"],
     "navbar_end": ["version-switcher"],
