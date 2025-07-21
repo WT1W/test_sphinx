@@ -98,3 +98,6 @@ html_theme_options = {
         "version_match": version,
     },
 }
+
+def setup(app):
+    app.add_css_file("custom.css")
