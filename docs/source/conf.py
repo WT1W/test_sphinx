@@ -88,6 +88,8 @@ html_baseurl = "https://wt1w.github.io/test_sphinx/blog8/"
 version = "5.2"
 html_theme_options = {
     "logo": {
+        "image_light": "docs/sand-logos/magi-icon.png",
+        "image_dark": "docs/sand-logos/magi-icon.png",
         "text": "MagiAttention",
     },
     "navbar_start": ["navbar-logo", "version-switcher"],
