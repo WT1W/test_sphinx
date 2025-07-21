@@ -84,14 +84,14 @@ html_theme = 'pydata_sphinx_theme'
 # html_theme = 'classic'
 # html_theme_path = [pytorch_sphinx_theme2.get_html_theme_path()]
 html_static_path = ['_static']
-html_baseurl = "https://wt1w.github.io/test_sphinx/blog1/"
-# version = "2.1"
-# html_theme_options = {
-#     "navbar_start": ["navbar-logo"],
-#     "navbar_end": ["version-switcher"],
-#     "switcher": {
-#         "json_url": "https://raw.githubusercontent.com/WT1W/test_sphinx/refs/heads/main/work.json",
-#         "version_match": version,
-#     },
-# }
+html_baseurl = "https://wt1w.github.io/test_sphinx/blog6/"
+version = "2.0"
+html_theme_options = {
+    "navbar_start": ["navbar-logo"],
+    "navbar_end": ["version-switcher"],
+    "switcher": {
+        "json_url": "https://wt1w.github.io/test_sphinx/versions.json",
+        "version_match": version,
+    },
+}
 
