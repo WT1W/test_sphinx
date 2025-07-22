@@ -85,7 +85,7 @@ html_theme = 'pydata_sphinx_theme'
 # html_theme_path = [pytorch_sphinx_theme2.get_html_theme_path()]
 html_static_path = ['_static']
 html_baseurl = "https://wt1w.github.io/test_sphinx/blog8/"
-version = "5.2"
+version = "2.1"
 html_theme_options = {
     "logo": {
         "image_light": "_static/sand-logos/magi-blc.png",
@@ -97,6 +97,14 @@ html_theme_options = {
         "json_url": "https://raw.githubusercontent.com/WT1W/test_sphinx/refs/heads/main/work.json",
         "version_match": version,
     },
+    "icon_links": [
+        {
+            "name": "documentation",
+            "url": "https://sandai-org.github.io/MagiAttention/blog/",
+            "icon": "fas fa-book-bookmark",  # 正确的写法：Font Awesome class
+            "type": "fontawesome",
+        },
+    ]
 }
 
 def setup(app):
