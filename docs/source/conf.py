@@ -10,8 +10,8 @@ sys.path.insert(0, os.path.abspath('../../'))
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'MagiAttentionTest'
-copyright = '2025, Sandai'
+project = 'MagiAttentionPR'
+copyright = '2026, Sandai'
 author = 'Sandai'
 release = 'v1.0.3'
 
